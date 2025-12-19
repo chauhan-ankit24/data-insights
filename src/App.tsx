@@ -65,8 +65,8 @@ const DemoApp: React.FC = () => {
               <Insight
                 type="trend"
                 metric="Revenue"
-                timeGrain="weekly"
-                timeRange={100}
+                timeGrain="daily"
+                timeRange={10}
                 dataResolver={trendDataResolver}
                 // refreshInterval={3000}
               />
@@ -93,8 +93,9 @@ const DemoApp: React.FC = () => {
                   dimension="location"
                   timeGrain="weekly"
                   // width="800px"
-                  // height="500px"
+                  // height="400px"
                   timeRange={60}
+                  // refreshInterval={5000}
                   dataResolver={contributorDataResolver}
                   dimensionValuesResolver={dimensionValuesResolver}
                 />

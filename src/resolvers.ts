@@ -25,6 +25,7 @@ export const contributorDataResolver = async (
 ): Promise<DataPoint[]> => {
   await new Promise((resolve) => setTimeout(resolve, 800));
   const dimensions = ["India", "China", "USA", "Germany"];
+  // return [];
   return generateContributorData(
     metric,
     "location",
